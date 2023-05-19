@@ -17,15 +17,6 @@ interface TextThemeType {
   labelSmall: StyleProp<TextStyle>;
 }
 
-export const colors = {
-  primary: '#3475F5',
-  black: '#10141b',
-  white: '#FEFEFE',
-  darkslategray: '',
-  darkgray: '',
-  lightgray: '#B0B1B7',
-};
-
 // XD파일 스크린의 세로,가로
 export const basicDimensions = {
   height: 2436,

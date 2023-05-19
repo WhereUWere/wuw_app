@@ -1,9 +1,10 @@
 import {createTheme} from '@rneui/themed';
+import {sizes} from './globalStyles';
 
 export const mainTheme = createTheme({
   lightColors: {
     primary: '#7762f6',
-    // secondary: 'black',
+    secondary: 'grey',
     // background: 'black',
     // white: 'black',
     // black: 'black',
@@ -20,10 +21,11 @@ export const mainTheme = createTheme({
     // error: 'black',
     // disabled: 'black',
     // divider: 'black',
+    background: '#f1f3f5',
   },
   darkColors: {
-    primary: 'black',
-    // secondary: 'black',
+    primary: '#7762f6',
+    secondary: 'grey',
     // background: 'black',
     // white: 'black',
     // black: 'black',
@@ -40,10 +42,30 @@ export const mainTheme = createTheme({
     // error: 'black',
     // disabled: 'black',
     // divider: 'black',
+    background: '#f1f3f5',
   },
   components: {
     Button: {
-      // raised: true,
+      radius: 'sm',
+      titleStyle: {
+        fontSize: sizes.md,
+      },
+    },
+    Input: {
+      containerStyle: {
+        paddingHorizontal: 0,
+      },
+      labelStyle: {
+        marginBottom: sizes.xxs,
+      },
+      inputContainerStyle: {
+        backgroundColor: 'white',
+        borderRadius: sizes.xxs,
+        borderBottomWidth: 0,
+        paddingHorizontal: sizes.lg,
+        paddingVertical: sizes.xxs,
+      },
     },
   },
+  mode: 'light',
 });
